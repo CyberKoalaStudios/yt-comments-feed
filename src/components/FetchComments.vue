@@ -20,12 +20,6 @@
       </ul>
     </nav>
 
-    <!--    <button @click="prevPage">-->
-    <!--      Начало-->
-    <!--    </button>-->
-    <!--    <button @click="nextPage">-->
-    <!--      Следующая-->
-    <!--    </button>-->
   </div>
 </template>
 

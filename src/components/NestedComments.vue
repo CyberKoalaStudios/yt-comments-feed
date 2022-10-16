@@ -8,11 +8,11 @@
                 <div class="row">
                     <div class="col-2">
                        <img alt="avatar" class="rounded-circle mr-3 align-self-start"
-                            src="{{snippet.authorProfileImageUrl}}">
+                            :src="snippet.authorProfileImageUrl">
                     </div>
                     <div class="col-8 align-self-start">
                       <div class="row">
-                        <a href="{{snippet.authorChannelUrl}}">
+                        <a :href="snippet.authorChannelUrl">
                           {{ snippet.authorDisplayName }}</a> · {{ formatDate(snippet.updatedAt) }}
                       </div>
                       <div class="row">
