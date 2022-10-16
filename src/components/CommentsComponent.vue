@@ -5,11 +5,12 @@
       <div class="card-body">
         <div class="container-md">
           <div class="row">
-            <div class="col">
-              <img :src="snippet.topLevelComment.snippet.authorProfileImageUrl" alt="Avatar"
-                   class="rounded-circle mr-3 align-self-start ">
-            </div>
-            <div class="col-md-auto align-self-start">
+<!--            <div class="col">-->
+<!--              <img :src="snippet.topLevelComment.snippet.authorProfileImageUrl" alt="Avatar"-->
+<!--                   class="rounded-circle mr-3 align-self-start ">-->
+<!--            </div>-->
+<!--            <div class="col-md-auto align-self-start">-->
+            <div class="col align-self-start">
               <div class="row">
                 <a :href="snippet.topLevelComment.snippet.authorChannelUrl">{{
                     snippet.topLevelComment.snippet.authorDisplayName
@@ -32,7 +33,7 @@
                 </template>
               </Transition>
             </div>
-            <div class="col">
+            <div class="col-3">
 <!--              <a :href="'https://www.youtube.com/watch?v=' + snippet.topLevelComment.snippet.videoId">URL</a>-->
               <!-- 16:9 aspect ratio -->
               <div class="embed-responsive embed-responsive-16by9">

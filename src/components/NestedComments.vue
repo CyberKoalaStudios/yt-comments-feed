@@ -6,10 +6,10 @@
             <div class="card-body">
               <div class="">
                 <div class="row">
-                    <div class="col-1.4">
-                       <img alt="avatar" class="rounded-circle mr-3 align-self-start"
-                            :src="snippet.authorProfileImageUrl">
-                    </div>
+<!--                    <div class="col-1.4">-->
+<!--                       <img alt="avatar" class="rounded-circle mr-3 align-self-start"-->
+<!--                            :src="snippet.authorProfileImageUrl">-->
+<!--                    </div>-->
                     <div class="col md-auto align-self-start">
                       <div class="row">
                         <a :href="snippet.authorChannelUrl">
