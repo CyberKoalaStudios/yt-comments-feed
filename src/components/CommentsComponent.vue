@@ -2,20 +2,20 @@
   <div class="media-body shadow p-3 mb-5 bg-white rounded">
     <div class="mb-3">
       <div class="">
-<!--      <div class="card-body">-->
+      <div class="card-body">
         <div class="container-md">
           <div class="row">
-            <div class="col-2">
-              <template v-if="snippet.topLevelComment.snippet.authorProfileImageUrl != null">
+            <div class="col">
               <img :src="snippet.topLevelComment.snippet.authorProfileImageUrl" alt="Avatar"
                    class="rounded-circle mr-3 align-self-start ">
-              </template>
             </div>
-            <div class="col-8">
+            <div class="col-md-auto align-self-start">
               <div class="row">
                 <a :href="snippet.topLevelComment.snippet.authorChannelUrl">{{
                     snippet.topLevelComment.snippet.authorDisplayName
                   }}</a> · {{ formatDate(snippet.topLevelComment.snippet.updatedAt) }}
+              </div>
+              <div class="row">
                 <p class="card-text text-left">{{ truncate(snippet.topLevelComment.snippet.textDisplay) }}</p>
               </div>
 
@@ -32,7 +32,7 @@
                 </template>
               </Transition>
             </div>
-            <div class="col-2">
+            <div class="col">
 <!--              <a :href="'https://www.youtube.com/watch?v=' + snippet.topLevelComment.snippet.videoId">URL</a>-->
               <!-- 16:9 aspect ratio -->
               <div class="embed-responsive embed-responsive-16by9">
@@ -44,7 +44,7 @@
 <!--                <label class="custom-control-label" for="customSwitch1">Ответы</label>-->
 <!--              </div>-->
             </div>
-
+          </div>
           </div>
         </div>
       </div>
@@ -121,4 +121,20 @@ export default {
 button{
   margin: 1em;
 }
+
+/*.row {*/
+/*  background: rgba(255, 0, 0, .1)*/
+/*}*/
+
+/*.row > div {*/
+/*  padding: 10px 15px;*/
+/*  background: rgba(86, 61, 124, .15);*/
+/*  border: 1px solid rgba(86, 61, 124, .2)*/
+/*}*/
+
+/*.column > div {*/
+/*  padding: 10px 15px;*/
+/*  background: rgba(86, 61, 124, .15);*/
+/*  border: 1px solid rgba(86, 61, 124, .2)*/
+/*}*/
 </style>
