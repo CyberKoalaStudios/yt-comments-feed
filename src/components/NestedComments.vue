@@ -1,8 +1,9 @@
 <template>
 <!--      <span v-for="{snippet, index} in comments" v-bind:key="index">-->
         <div class="media-body">
-          <div class="card mb-3">
-            <div class="card-body ">
+<!--          <div class="card mb-3"> -->
+          <div>
+            <div class="card-body">
               <div class="container-md">
                 <div class="row">
                     <div class="col-2">

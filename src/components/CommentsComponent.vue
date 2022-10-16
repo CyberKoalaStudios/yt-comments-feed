@@ -1,39 +1,69 @@
 <template>
-  <div class="media-body">
-    <div class="card mb-3">
+  <div class="media-body shadow p-3 mb-5 bg-white rounded">
+    <div class="mb-3">
       <div class="card-body">
         <div class="container-md">
           <div class="row">
             <div class="col-1">
-              <img v-bind:src="snippet.topLevelComment.snippet.authorProfileImageUrl" alt="Avatar"
+              <img :src="snippet.topLevelComment.snippet.authorProfileImageUrl" alt="Avatar"
                    class="rounded-circle mr-3 align-self-start">
+
             </div>
             <div class="col-9 align-self-start">
               <div class="row">
-                <a href="{{snippet.topLevelComment.snippet.authorChannelUrl}}">{{
+                <a :href="snippet.topLevelComment.snippet.authorChannelUrl">{{
                     snippet.topLevelComment.snippet.authorDisplayName
                   }}</a> · {{ formatDate(snippet.topLevelComment.snippet.updatedAt) }}
               </div>
               <p class="card-text text-left">{{ truncate(snippet.topLevelComment.snippet.textDisplay) }}</p>
+
+              <Transition>
+                <template v-if="show && replies!= null">
+                  <div class="media mt-3 ">
+                    <span v-for="(comments, index) in replies" v-bind:key="index">
+                      <NestedComments
+                          v-for="{snippet, index} in comments" v-bind:key="index"
+                          :snippet="snippet"
+                      ></NestedComments>
+                    </span>
+                  </div>
+                </template>
+              </Transition>
             </div>
             <div class="col">
-              <a href="https://www.youtube.com/watch?v={{ snippet.topLevelComment.snippet.videoId }}">URL</a>
+<!--              <a :href="'https://www.youtube.com/watch?v=' + snippet.topLevelComment.snippet.videoId">URL</a>-->
+              <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item " :src="'https://www.youtube.com/embed/'+ snippet.topLevelComment.snippet.videoId" ></iframe>
+              </div>
+
+              <button @click="show = !show" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ответы</button>
+
             </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <span v-if="replies != null">
-                <div class="media mt-3">
-                  <span v-for="(comments, index) in replies" v-bind:key="index">
-                    <NestedComments
-                        v-for="{snippet, index} in comments" v-bind:key="index"
-                        :snippet="snippet"
-                    ></NestedComments>
-                  </span>
-                </div>
-            </span>
+
+<!--    <div class="collapse" id="collapseExample">-->
+<!--      <div class="card card-body">-->
+<!--        <template v-if="show && replies!= null">-->
+<!--          <div class="media mt-3">-->
+<!--          <span v-for="(comments, index) in replies" v-bind:key="index">-->
+<!--            <NestedComments-->
+<!--                v-for="{snippet, index} in comments" v-bind:key="index"-->
+<!--                :snippet="snippet"-->
+<!--            ></NestedComments>-->
+<!--          </span>-->
+<!--          </div>-->
+<!--        </template>-->
+<!--&lt;!&ndash;        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.&ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+
+
   </div>
 
 </template>
@@ -42,7 +72,15 @@
 import NestedComments from "./NestedComments.vue";
 
 export default {
+  inject: ['commentsThreads'],
   name: "CommentsComponent",
+
+  data() {
+    return {
+      show: true
+    }
+  },
+
   props: {
     snippet: null,
     replies: null
@@ -50,7 +88,6 @@ export default {
 
   components: {
     NestedComments,
-
   },
 
   methods: {
@@ -67,5 +104,17 @@ export default {
 </script>
 
 <style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
 
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+button{
+  margin: 1em;
+}
 </style>

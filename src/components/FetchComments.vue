@@ -1,14 +1,31 @@
 <template>
-  <h1>Latest Comments</h1>
+  <h1>Последние комментарии</h1>
   <div class="form">
 
     <ul class="list-unstyled">
-        <li v-for="{id, snippet, replies} in commentsThreads.items" v-bind:key="id" class="media">
-<!--          <img alt="Avatar" class="rounded-circle mr-3 align-self-start"-->
-<!--               v-bind:src="snippet.topLevelComment.snippet.authorProfileImageUrl">-->
-          <CommentsComponent :snippet="snippet" :replies="replies"/>
-        </li>
+      <li v-for="{id, snippet, replies} in commentsThreads.items" v-bind:key="id" class="media">
+        <!--          <img alt="Avatar" class="rounded-circle mr-3 align-self-start"-->
+        <!--               v-bind:src="snippet.topLevelComment.snippet.authorProfileImageUrl">-->
+        <CommentsComponent :snippet="snippet" :replies="replies"/>
+      </li>
     </ul>
+
+    <nav aria-label="Page nav">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" @click="prevPage">Первая</a></li>
+        <!--        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+        <!--        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+        <!--        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+        <li class="page-item"><a class="page-link" type="button" @click="nextPage">Следующая</a></li>
+      </ul>
+    </nav>
+
+    <!--    <button @click="prevPage">-->
+    <!--      Начало-->
+    <!--    </button>-->
+    <!--    <button @click="nextPage">-->
+    <!--      Следующая-->
+    <!--    </button>-->
   </div>
 </template>
 
@@ -23,16 +40,20 @@ export default {
 
   data() {
     return {
-    // pageInfo: ['main', 'v2-compat'],
-    commentsThreads: {},
-    commentsMock: commentsData,
-    maxResults: 40
-  }},
+      // pageInfo: ['main', 'v2-compat'],
+      commentsThreads: {},
+      commentsMock: commentsData,
+      maxResults: 10,
+      pageToken: String,
+      firstPageUrl: String,
+    }
+  },
 
   components: {
     CommentsComponent,
-
   },
+
+  props: {},
 
   created() {
     // fetch on init
@@ -40,28 +61,39 @@ export default {
   },
 
   watch: {
-    // re-fetch whenever currentBranch changes
-    // currentBranch: 'fetchData',
+    // re-fetch whenever maxResults changes
     maxResults: 'fetchData',
-    // commentsThreads: 'fetchData'
   },
 
   computed: {},
 
+  provide() {
+    // use function syntax so that we can access `this`
+    return {
+      commentsThreads: this.commentsThreads
+    }
+  },
+
   methods: {
     async fetchData() {
-      const url = `${API_URL}&${this.maxResults}`
+      const url = `${API_URL}&maxResults=${this.maxResults}`
+      this.firstPageUrl = url
       this.commentsThreads = await (await fetch(url)).json()
+      this.pageToken = this.commentsThreads.nextPageToken
     },
 
-    // truncate(v) {
-    //   const newline = v.indexOf('\n')
-    //   return newline > 0 ? v.slice(0, newline) : v
-    // },
-    //
-    // formatDate(v) {
-    //   return v.replace(/T|Z/g, ' ')
-    // }
+    async nextPage() {
+      const url = `${API_URL}&maxResults=${this.maxResults}&pageToken=${this.pageToken}`
+
+      this.commentsThreads = await (await fetch(url)).json()
+      this.pageToken = this.commentsThreads.nextPageToken
+
+    },
+
+    async prevPage() {
+      this.commentsThreads = await (await fetch(this.firstPageUrl)).json()
+      this.pageToken = this.commentsThreads.nextPageToken
+    }
   },
 
   // This function will be called when the component is mounted.
