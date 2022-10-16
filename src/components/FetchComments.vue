@@ -1,5 +1,5 @@
 <template>
-  <h1>Последние комментарии</h1>
+<!--  <h1>Последние комментарии</h1>-->
   <div class="form">
 
     <ul class="list-unstyled">
