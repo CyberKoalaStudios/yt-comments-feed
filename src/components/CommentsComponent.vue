@@ -1,21 +1,23 @@
 <template>
   <div class="media-body shadow p-3 mb-5 bg-white rounded">
     <div class="mb-3">
-      <div class="card-body">
+      <div class="">
+<!--      <div class="card-body">-->
         <div class="container-md">
           <div class="row">
-            <div class="col-1">
+            <div class="col-2">
+              <template v-if="snippet.topLevelComment.snippet.authorProfileImageUrl != null">
               <img :src="snippet.topLevelComment.snippet.authorProfileImageUrl" alt="Avatar"
-                   class="rounded-circle mr-3 align-self-start">
-
+                   class="rounded-circle mr-3 align-self-start ">
+              </template>
             </div>
-            <div class="col-9 align-self-start">
+            <div class="col-8">
               <div class="row">
                 <a :href="snippet.topLevelComment.snippet.authorChannelUrl">{{
                     snippet.topLevelComment.snippet.authorDisplayName
                   }}</a> · {{ formatDate(snippet.topLevelComment.snippet.updatedAt) }}
+                <p class="card-text text-left">{{ truncate(snippet.topLevelComment.snippet.textDisplay) }}</p>
               </div>
-              <p class="card-text text-left">{{ truncate(snippet.topLevelComment.snippet.textDisplay) }}</p>
 
               <Transition>
                 <template v-if="show && replies!= null">
@@ -30,15 +32,17 @@
                 </template>
               </Transition>
             </div>
-            <div class="col">
+            <div class="col-2">
 <!--              <a :href="'https://www.youtube.com/watch?v=' + snippet.topLevelComment.snippet.videoId">URL</a>-->
               <!-- 16:9 aspect ratio -->
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item " :src="'https://www.youtube.com/embed/'+ snippet.topLevelComment.snippet.videoId" ></iframe>
+                <iframe class="embed-responsive-item" :src="'https://www.youtube.com/embed/'+ snippet.topLevelComment.snippet.videoId + '?controls=0'" ></iframe>
               </div>
-
-              <button @click="show = !show" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ответы</button>
-
+<!--              <button @click="show = !show" type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ответы</button>-->
+<!--              <div class="custom-control custom-switch">-->
+<!--                <input type="checkbox" :checked="show" class="custom-control-input" id="customSwitch1" @change="show = !show" >-->
+<!--                <label class="custom-control-label" for="customSwitch1">Ответы</label>-->
+<!--              </div>-->
             </div>
 
           </div>

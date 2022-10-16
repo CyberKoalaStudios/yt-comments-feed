@@ -107,7 +107,10 @@ export default {
 
 .form {
   /*margin: 1em;*/
-  padding: 2.5em;
+  background-color: #fffcf7;
+  color: #070707;
+  /*font-family: Inter;*/
+  padding: 1.5em;
 }
 
 .row {

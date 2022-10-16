@@ -4,9 +4,9 @@
 <!--          <div class="card mb-3"> -->
           <div>
             <div class="card-body">
-              <div class="container-md">
+              <div class="">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-3">
                        <img alt="avatar" class="rounded-circle mr-3 align-self-start"
                             :src="snippet.authorProfileImageUrl">
                     </div>
