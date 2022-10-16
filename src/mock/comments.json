@@ -1,0 +1,583 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "VcbZiTgI38y4izczs9tn6Z8KlUA",
+  "nextPageToken": "QURTSl9pMmdXZTVqMFBsS19meERPVTJmenRxWno5Rzc2dDNRdDNqT19RLU1sMlFZdTF1SjIzYWVtc0ZvdzB3VXhHVHBJT25zYnNYMU00V1puTmczRFRZUDg5VzRyUzNWLVRCZU9YeWFLcTJyaUhQemZSU1hiYWNNZnJPOGxuZllCZGpDblRGYXJoRmRHaDBtLUdjWWYzOVFvZ0xLQl9BYzc1YzN2Q3NCU3AwNk5oa1h0VnNTQXdINkNFcHgtY2hDRWRzV1FNSnFsb1hKc3pB",
+  "pageInfo": {
+    "totalResults": 10,
+    "resultsPerPage": 10
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "BqSLUI7D6j-LExnnmF8a3QV7G_g",
+      "id": "UgwwSjlezrrnMRK5ccZ4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "gaZmXLZ0n0k",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ppbOKfNxSq3Oz9Oy5JFoR0DZbC4",
+          "id": "UgwwSjlezrrnMRK5ccZ4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "gaZmXLZ0n0k",
+            "textDisplay": "все конечно прикольно, особенно когда у тебя нет game hud reference, люди тебе уже написали об этом, а теперь скажи, что конкретно вместо него ставить?",
+            "textOriginal": "все конечно прикольно, особенно когда у тебя нет game hud reference, люди тебе уже написали об этом, а теперь скажи, что конкретно вместо него ставить?",
+            "authorDisplayName": "Тайный Господин",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu_4v7kgP1T0H7Kr-9X287tyte8umIKG9x_kc0OZ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC1I-Gy--U270vB4ekOTm9iw",
+            "authorChannelId": {
+              "value": "UC1I-Gy--U270vB4ekOTm9iw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2022-10-12T16:38:24Z",
+            "updatedAt": "2022-10-12T16:38:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "4qXTlcDonL8-C0F3wm2ftPnjriw",
+            "id": "UgwwSjlezrrnMRK5ccZ4AaABAg.9h5E49_G2AO9h6jt37B3Gn",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "gaZmXLZ0n0k",
+              "textDisplay": "На <a href=\"https://www.youtube.com/watch?v=gaZmXLZ0n0k&amp;t=11m22s\">11:22</a>:  нажимаем правой кнопкой мыши на Return Value у Create UI Game HUD Widget и выбираем Promote to variable - создастся данная переменная. Этот момент упустил в видео.",
+              "textOriginal": "На 11:22:  нажимаем правой кнопкой мыши на Return Value у Create UI Game HUD Widget и выбираем Promote to variable - создастся данная переменная. Этот момент упустил в видео.",
+              "parentId": "UgwwSjlezrrnMRK5ccZ4AaABAg",
+              "authorDisplayName": "COOLDAY",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/YZ7guwuD1QjcZwYzxs64l-ydsL-WsEiybwEtJzA808JE_DSPT0j7EPBDmlmYXDIA0MXHxBf-ag=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCUpVfgd42h7pwZwCTcwjp8g",
+              "authorChannelId": {
+                "value": "UCUpVfgd42h7pwZwCTcwjp8g"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2022-10-13T06:44:21Z",
+              "updatedAt": "2022-10-13T06:44:21Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aM45mRRNU3pjV08a4rkMihihldY",
+      "id": "UgyhqzOWm4AyAao5ket4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "HuO0ZQ0UtM4",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "jCaGmPyksGyGGs9Wv8bt3VdZ4_I",
+          "id": "UgyhqzOWm4AyAao5ket4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "HuO0ZQ0UtM4",
+            "textDisplay": "Очень качественный подход к созданию роликов и голос добротный! Вопрос, будет ли проект с мультиплеером?)",
+            "textOriginal": "Очень качественный подход к созданию роликов и голос добротный! Вопрос, будет ли проект с мультиплеером?)",
+            "authorDisplayName": "RomanUnreal",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/3vjBdK9A7yQ1EsBrIYyKiE-l0mjvEAr5jmDZ61K8aWchX7yB51hxwhYTA5O4W4HYqrBVVgKO_Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC8Yrh7x6x2DCWc9isJ1dfwg",
+            "authorChannelId": {
+              "value": "UC8Yrh7x6x2DCWc9isJ1dfwg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2022-10-11T12:50:34Z",
+            "updatedAt": "2022-10-11T12:50:34Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "oUqTjjNgWmiAdH-FDlGHd9tBYO0",
+            "id": "UgyhqzOWm4AyAao5ket4AaABAg.9h2FCc2LdIi9h2VXjOglql",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "HuO0ZQ0UtM4",
+              "textDisplay": "Да, после того как разберем основные механики, в этом же плейлисте будет создание мультиплеера",
+              "textOriginal": "Да, после того как разберем основные механики, в этом же плейлисте будет создание мультиплеера",
+              "parentId": "UgyhqzOWm4AyAao5ket4AaABAg",
+              "authorDisplayName": "COOLDAY",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/YZ7guwuD1QjcZwYzxs64l-ydsL-WsEiybwEtJzA808JE_DSPT0j7EPBDmlmYXDIA0MXHxBf-ag=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCUpVfgd42h7pwZwCTcwjp8g",
+              "authorChannelId": {
+                "value": "UCUpVfgd42h7pwZwCTcwjp8g"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2022-10-11T15:13:16Z",
+              "updatedAt": "2022-10-11T15:13:16Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "zCEl0ImAogX6Z29Zc0x7FQLPStY",
+      "id": "Ugx8F-zXYUaia88HCa14AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "8vJRzsoltOw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "vCMOLg3Y340oz4UZvXe9ogR5zj0",
+          "id": "Ugx8F-zXYUaia88HCa14AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "8vJRzsoltOw",
+            "textDisplay": "как сохранить(ковертировать) симуляцию в статик меш? то есть хочу засимулировать разрушение и оставить разрушенным...",
+            "textOriginal": "как сохранить(ковертировать) симуляцию в статик меш? то есть хочу засимулировать разрушение и оставить разрушенным...",
+            "authorDisplayName": "Вахо Пипия",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu8BJqHfNDZ4ldy47n6YF0Ltrxrn72SlAP_V5MW_UA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCGylBzMnzrkycdqX4fv1jiA",
+            "authorChannelId": {
+              "value": "UCGylBzMnzrkycdqX4fv1jiA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2022-10-10T09:21:44Z",
+            "updatedAt": "2022-10-10T09:21:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "rpmeXG3gLB9c195J1XkNYg2sM3I",
+            "id": "Ugx8F-zXYUaia88HCa14AaABAg.9h-IWDL_OBt9h2P1FyZsw8",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "8vJRzsoltOw",
+              "textDisplay": "@// ну что поделаешь? Хоть так, чем никак…)",
+              "textOriginal": "@// ну что поделаешь? Хоть так, чем никак…)",
+              "parentId": "Ugx8F-zXYUaia88HCa14AaABAg",
+              "authorDisplayName": "Вахо Пипия",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu8BJqHfNDZ4ldy47n6YF0Ltrxrn72SlAP_V5MW_UA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCGylBzMnzrkycdqX4fv1jiA",
+              "authorChannelId": {
+                "value": "UCGylBzMnzrkycdqX4fv1jiA"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2022-10-11T14:16:24Z",
+              "updatedAt": "2022-10-11T14:16:24Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "elJRCNJqMJcPdeFPhD9jVoMZ70w",
+            "id": "Ugx8F-zXYUaia88HCa14AaABAg.9h-IWDL_OBt9h1zlCw6XPh",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "8vJRzsoltOw",
+              "textDisplay": "@Вахо Пипия какие костыли",
+              "textOriginal": "@Вахо Пипия какие костыли",
+              "parentId": "Ugx8F-zXYUaia88HCa14AaABAg",
+              "authorDisplayName": "//",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu_EsL7nPR0KdbtzB3s1gN6mhyKzxKzxCggKOw=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCJpvfhUUJgddXtSOdjybYWw",
+              "authorChannelId": {
+                "value": "UCJpvfhUUJgddXtSOdjybYWw"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2022-10-11T10:26:53Z",
+              "updatedAt": "2022-10-11T10:26:53Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "MJDEoT_7lbpRusSIbnthswFMoGo",
+            "id": "Ugx8F-zXYUaia88HCa14AaABAg.9h-IWDL_OBt9h1m7wJUBGX",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "8vJRzsoltOw",
+              "textDisplay": "@// она не активна в режиме симуляции, но я нашел другое решение: в сцене надо добавить chaos manager и chaos player, потом записать симуляцию и проиграть, а потом уже to mesh)",
+              "textOriginal": "@// она не активна в режиме симуляции, но я нашел другое решение: в сцене надо добавить chaos manager и chaos player, потом записать симуляцию и проиграть, а потом уже to mesh)",
+              "parentId": "Ugx8F-zXYUaia88HCa14AaABAg",
+              "authorDisplayName": "Вахо Пипия",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu8BJqHfNDZ4ldy47n6YF0Ltrxrn72SlAP_V5MW_UA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCGylBzMnzrkycdqX4fv1jiA",
+              "authorChannelId": {
+                "value": "UCGylBzMnzrkycdqX4fv1jiA"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2022-10-11T08:27:47Z",
+              "updatedAt": "2022-10-11T08:27:47Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "qoDTFxDdQXJxlWbr1l_DaVJgbr0",
+            "id": "Ugx8F-zXYUaia88HCa14AaABAg.9h-IWDL_OBt9h1erI0gs_N",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "8vJRzsoltOw",
+              "textDisplay": "Есть там кнопка toMesh, если не ошибаюсь",
+              "textOriginal": "Есть там кнопка toMesh, если не ошибаюсь",
+              "parentId": "Ugx8F-zXYUaia88HCa14AaABAg",
+              "authorDisplayName": "//",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu_EsL7nPR0KdbtzB3s1gN6mhyKzxKzxCggKOw=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCJpvfhUUJgddXtSOdjybYWw",
+              "authorChannelId": {
+                "value": "UCJpvfhUUJgddXtSOdjybYWw"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 2,
+              "publishedAt": "2022-10-11T07:24:13Z",
+              "updatedAt": "2022-10-11T07:24:13Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tthihhzqWRrYNbANsOK_gMWjk-w",
+      "id": "UgxzF0FPxlzp1xNRx8p4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "TiHKXbQoWII",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "eBKA2wzbZJqYjuJMEIBzXYRRGCw",
+          "id": "UgxzF0FPxlzp1xNRx8p4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "TiHKXbQoWII",
+            "textDisplay": "Скажите пожалуйста, а данный урок подойдет для создания игры именно под сам oculus quest без пк, т.е под apk?",
+            "textOriginal": "Скажите пожалуйста, а данный урок подойдет для создания игры именно под сам oculus quest без пк, т.е под apk?",
+            "authorDisplayName": "Хороший Электрик",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu_PTvXrH3NXCMjB1BRoMMG3PeAXq7peCh0OWeNyjg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCRKYz9JNvHYhcKpDyE_3qog",
+            "authorChannelId": {
+              "value": "UCRKYz9JNvHYhcKpDyE_3qog"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2022-10-06T04:28:49Z",
+            "updatedAt": "2022-10-06T04:28:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "YaAzQhDSCwxwE4d3NumTXZpLbNg",
+            "id": "UgxzF0FPxlzp1xNRx8p4AaABAg.9gpToKNUj3c9gpgsZLYDWu",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "TiHKXbQoWII",
+              "textDisplay": "Да, конечно. Проект будет работать и автономно на шлеме, если собрать apk",
+              "textOriginal": "Да, конечно. Проект будет работать и автономно на шлеме, если собрать apk",
+              "parentId": "UgxzF0FPxlzp1xNRx8p4AaABAg",
+              "authorDisplayName": "COOLDAY",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/YZ7guwuD1QjcZwYzxs64l-ydsL-WsEiybwEtJzA808JE_DSPT0j7EPBDmlmYXDIA0MXHxBf-ag=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCUpVfgd42h7pwZwCTcwjp8g",
+              "authorChannelId": {
+                "value": "UCUpVfgd42h7pwZwCTcwjp8g"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2022-10-06T06:31:44Z",
+              "updatedAt": "2022-10-06T06:31:44Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "n3BUaFRHOY-W05bDXLMI9RV0k7A",
+      "id": "UgyYDnKtOE08zvYCVNR4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "WZ2heMAIDZU",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "swKbDWo4auSdsi7SPRreRe5QSjM",
+          "id": "UgyYDnKtOE08zvYCVNR4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "WZ2heMAIDZU",
+            "textDisplay": "<a href=\"https://www.youtube.com/watch?v=WZ2heMAIDZU&amp;t=6m07s\">6:07</a> настройка ротации камеры. Кто делает от 1 лица, вам это не нужно<br><a href=\"https://www.youtube.com/watch?v=WZ2heMAIDZU&amp;t=11m36s\">11:36</a> настройка управления геймпадом",
+            "textOriginal": "6:07 настройка ротации камеры. Кто делает от 1 лица, вам это не нужно\n11:36 настройка управления геймпадом",
+            "authorDisplayName": "Тайный Господин",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu_4v7kgP1T0H7Kr-9X287tyte8umIKG9x_kc0OZ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC1I-Gy--U270vB4ekOTm9iw",
+            "authorChannelId": {
+              "value": "UC1I-Gy--U270vB4ekOTm9iw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2022-10-05T16:40:41Z",
+            "updatedAt": "2022-10-05T17:11:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "MX11-6hEU9hFa76MomGlGYPBiJI",
+      "id": "UgyopybRXjJEyiMkeNt4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "FkBFHB0X6XE",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "hMcWkrBp9ETHnMHNMQO8CIs7J7o",
+          "id": "UgyopybRXjJEyiMkeNt4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "FkBFHB0X6XE",
+            "textDisplay": "Ну и в довесок к комменту на прошлом видео.<br>Мне показалось, что два твоих видео по этой теме - перевод кодманки, с небольшими твоими дополнениями. Стремись к его скорости подачи: 2 часа твоих видео = 40 минут его.<br><br>Это не более чем мои пожелания, и при всем при этом большое спасибо тебе! Выкрутил скорость как нужно и смотрел с удовольствием, было очень полезно) <br>Рад был бы увидеть еще что-то подобное от тебя. С этого момента наблюдаю за развитием канала.",
+            "textOriginal": "Ну и в довесок к комменту на прошлом видео.\nМне показалось, что два твоих видео по этой теме - перевод кодманки, с небольшими твоими дополнениями. Стремись к его скорости подачи: 2 часа твоих видео = 40 минут его.\n\nЭто не более чем мои пожелания, и при всем при этом большое спасибо тебе! Выкрутил скорость как нужно и смотрел с удовольствием, было очень полезно) \nРад был бы увидеть еще что-то подобное от тебя. С этого момента наблюдаю за развитием канала.",
+            "authorDisplayName": "Иван Алексеев",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu-12KmOQlwilCFAloASuDQvIoh3t895b4uZoQPpDIpaUmzi7eynC-prcTVyidr2uA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCYfIDwEpQbS72uwQCrJ9-3Q",
+            "authorChannelId": {
+              "value": "UCYfIDwEpQbS72uwQCrJ9-3Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2022-10-04T20:28:29Z",
+            "updatedAt": "2022-10-04T20:30:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "k6CVPWE7LWNqPyspcM02wOv77s4",
+      "id": "UgxqYAg34KfmIMjES9t4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "FkBFHB0X6XE",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "CuMQbG10SE67kPqfpz7OJrxj-tc",
+          "id": "UgxqYAg34KfmIMjES9t4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "FkBFHB0X6XE",
+            "textDisplay": "На 23 минуте несколько раз срабатывает изменение переменной.<br>Не удивительно, потому что GetKey будет выполняться каждый фрейм, пока кнопка нажата. То есть за время клика успевает несколько раз сработать.<br>Здесь нужен GetKeyDown из прошлого видео, который срабатывает один раз при нажатии кнопки. Для движения вот как раз он и не подошел.<br><br>UPD: досмотрел до момента, когда поправили)",
+            "textOriginal": "На 23 минуте несколько раз срабатывает изменение переменной.\nНе удивительно, потому что GetKey будет выполняться каждый фрейм, пока кнопка нажата. То есть за время клика успевает несколько раз сработать.\nЗдесь нужен GetKeyDown из прошлого видео, который срабатывает один раз при нажатии кнопки. Для движения вот как раз он и не подошел.\n\nUPD: досмотрел до момента, когда поправили)",
+            "authorDisplayName": "Иван Алексеев",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu-12KmOQlwilCFAloASuDQvIoh3t895b4uZoQPpDIpaUmzi7eynC-prcTVyidr2uA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCYfIDwEpQbS72uwQCrJ9-3Q",
+            "authorChannelId": {
+              "value": "UCYfIDwEpQbS72uwQCrJ9-3Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2022-10-04T09:49:34Z",
+            "updatedAt": "2022-10-04T09:51:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "47OAEoC9RvWR2NbqQH6FGlJvf3w",
+      "id": "UgxVI8GhX3Oe3h5uT4d4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "TNDH7umembY",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Vf9WjmvOnGCy73T-wqOTt2aoEus",
+          "id": "UgxVI8GhX3Oe3h5uT4d4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "TNDH7umembY",
+            "textDisplay": "Спасибо за видео. Очень кстати) я измучился на английском уроки смотреть. Лайк, подписка и пожелания каналу скорейшего продвижения)<br>Я бы предложил в подобного уровня уроках не объяснять и не упоминать моменты типа SerializeField, привязка элементов интерфейса к углу и т.д.<br>Если человек не знает этого, то ему рано смотреть это видео.<br>Вобщем, я предлагаю не отвлекаться на мелочи, а рассказывать/слушать инфу конкретно по теме.",
+            "textOriginal": "Спасибо за видео. Очень кстати) я измучился на английском уроки смотреть. Лайк, подписка и пожелания каналу скорейшего продвижения)\nЯ бы предложил в подобного уровня уроках не объяснять и не упоминать моменты типа SerializeField, привязка элементов интерфейса к углу и т.д.\nЕсли человек не знает этого, то ему рано смотреть это видео.\nВобщем, я предлагаю не отвлекаться на мелочи, а рассказывать/слушать инфу конкретно по теме.",
+            "authorDisplayName": "Иван Алексеев",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu-12KmOQlwilCFAloASuDQvIoh3t895b4uZoQPpDIpaUmzi7eynC-prcTVyidr2uA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCYfIDwEpQbS72uwQCrJ9-3Q",
+            "authorChannelId": {
+              "value": "UCYfIDwEpQbS72uwQCrJ9-3Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2022-10-04T09:05:04Z",
+            "updatedAt": "2022-10-04T09:08:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JtKI4U5B5JTXgSD4x4IGEr5Lcbw",
+      "id": "Ugyz0S3I03JwnskScsB4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "TNDH7umembY",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4Dxu0nzhylpj6nF52gURrpAV1Vg",
+          "id": "Ugyz0S3I03JwnskScsB4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "TNDH7umembY",
+            "textDisplay": "Расскажи еще, как выкладывать сервер на хостинг в unity service multiplayer",
+            "textOriginal": "Расскажи еще, как выкладывать сервер на хостинг в unity service multiplayer",
+            "authorDisplayName": "Brick Man",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu8f7ShHcsac1EVi4FrdWZC7pbsK9n441qOWwg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCWGlfydpIR9S4cAd9eyIufQ",
+            "authorChannelId": {
+              "value": "UCWGlfydpIR9S4cAd9eyIufQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2022-09-30T13:21:34Z",
+            "updatedAt": "2022-09-30T13:25:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "HJcA7_tkweQWPb-zPa_82wHp-2I",
+            "id": "Ugyz0S3I03JwnskScsB4AaABAg.9gaz00w1QnA9gbCbeNnOk-",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "TNDH7umembY",
+              "textDisplay": "Хорошая идея!",
+              "textOriginal": "Хорошая идея!",
+              "parentId": "Ugyz0S3I03JwnskScsB4AaABAg",
+              "authorDisplayName": "COOLDAY",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/YZ7guwuD1QjcZwYzxs64l-ydsL-WsEiybwEtJzA808JE_DSPT0j7EPBDmlmYXDIA0MXHxBf-ag=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCUpVfgd42h7pwZwCTcwjp8g",
+              "authorChannelId": {
+                "value": "UCUpVfgd42h7pwZwCTcwjp8g"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2022-09-30T15:29:10Z",
+              "updatedAt": "2022-09-30T15:29:10Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OaBfUfXtf9WQScFwpMvcatZrVuc",
+      "id": "Ugymq5WZHBRbiW1ZX5N4AaABAg",
+      "snippet": {
+        "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+        "videoId": "WZ2heMAIDZU",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4kS_xWRRGLSPS5pSB1kiLqPLhq8",
+          "id": "Ugymq5WZHBRbiW1ZX5N4AaABAg",
+          "snippet": {
+            "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+            "videoId": "WZ2heMAIDZU",
+            "textDisplay": "ну я в шоке. У этого чувака есть монтаж и он не заикается!",
+            "textOriginal": "ну я в шоке. У этого чувака есть монтаж и он не заикается!",
+            "authorDisplayName": "Тайный Господин",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu_4v7kgP1T0H7Kr-9X287tyte8umIKG9x_kc0OZ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC1I-Gy--U270vB4ekOTm9iw",
+            "authorChannelId": {
+              "value": "UC1I-Gy--U270vB4ekOTm9iw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2022-09-28T16:39:44Z",
+            "updatedAt": "2022-09-28T16:39:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "QV84VwJeneZQtqkLtDDnOosfi2o",
+            "id": "Ugymq5WZHBRbiW1ZX5N4AaABAg.9gXB5jwe3xZ9h07-gsvHTB",
+            "snippet": {
+              "channelId": "UCUpVfgd42h7pwZwCTcwjp8g",
+              "videoId": "WZ2heMAIDZU",
+              "textDisplay": "<a href=\"https://www.youtube.com/watch?v=WZ2heMAIDZU&amp;t=13m52s\">13:52</a> создание характеристик",
+              "textOriginal": "13:52 создание характеристик",
+              "parentId": "Ugymq5WZHBRbiW1ZX5N4AaABAg",
+              "authorDisplayName": "Тайный Господин",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AMLnZu_4v7kgP1T0H7Kr-9X287tyte8umIKG9x_kc0OZ=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC1I-Gy--U270vB4ekOTm9iw",
+              "authorChannelId": {
+                "value": "UC1I-Gy--U270vB4ekOTm9iw"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2022-10-10T17:00:25Z",
+              "updatedAt": "2022-10-10T17:00:25Z"
+            }
+          }
+        ]
+      }
+    }
+  ]
+
+}
