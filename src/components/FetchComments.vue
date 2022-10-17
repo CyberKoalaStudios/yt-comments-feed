@@ -13,9 +13,10 @@
     <nav aria-label="Page nav">
       <ul class="pagination justify-content-center">
         <li class="page-item"><a class="page-link" @click="prevPage">Первая</a></li>
-        <!--        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
-        <!--        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
-        <!--        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+        <li v-for="(page, index) in pageTokens" v-bind:key="index" class="page-item"><a class="page-link" @click="loadPage(index)">{{index}}</a></li>
+<!--                <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                <li class="page-item"><a class="page-link" href="#">3</a></li>-->
         <li class="page-item"><a class="page-link" type="button" @click="nextPage">Следующая</a></li>
       </ul>
     </nav>
@@ -40,6 +41,7 @@ export default {
       maxResults: 10,
       pageToken: String,
       firstPageUrl: String,
+      pageTokens: []
     }
   },
 
@@ -72,7 +74,14 @@ export default {
     async fetchData() {
       const url = `${API_URL}&maxResults=${this.maxResults}`
       this.firstPageUrl = url
-      this.commentsThreads = await (await fetch(url)).json()
+      this.commentsThreads = await (await fetch(url).then(response => {
+        if(response.ok){
+          return response.json();
+        }
+        throw new Error(response.statusText);
+      })
+      )
+      this.pageTokens.push(this.commentsThreads.nextPageToken);
       this.pageToken = this.commentsThreads.nextPageToken
     },
 
@@ -80,8 +89,15 @@ export default {
       const url = `${API_URL}&maxResults=${this.maxResults}&pageToken=${this.pageToken}`
 
       this.commentsThreads = await (await fetch(url)).json()
+      this.pageTokens.push(this.commentsThreads.nextPageToken);
       this.pageToken = this.commentsThreads.nextPageToken
+    },
 
+    async loadPage(index) {
+      const url = `${API_URL}&maxResults=${this.maxResults}&pageToken=${this.pageTokens[index]}`
+
+      this.commentsThreads = await (await fetch(url)).json()
+      // this.pageToken = this.commentsThreads.nextPageToken
     },
 
     async prevPage() {
