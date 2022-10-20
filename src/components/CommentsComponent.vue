@@ -25,7 +25,7 @@
                   <div class="media mt-3 ">
                     <span v-for="(comments, index) in replies" v-bind:key="index">
                       <NestedComments
-                          v-for="{snippet, index} in comments" v-bind:key="index"
+                          v-for="{snippet, index} in comments.slice().reverse()" v-bind:key="index"
                           :snippet="snippet"
                       ></NestedComments>
                     </span>
