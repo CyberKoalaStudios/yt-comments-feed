@@ -7,6 +7,11 @@
       </div>
     </div>
 
+    <select class="form-select mb-3" aria-label="Канал" @change="onChannelChange($event)" v-model="selectedChannel">
+      <option value="coolday" selected>Канал COOLDAY</option>
+      <option value="cyberkoala">Канал CyberKoala</option>
+    </select>
+
     <ul class="list-unstyled" v-if="!loading">
       <li v-for="{id, snippet, replies} in commentsThreads.items" v-bind:key="id" class="media">
         <!--          <img alt="Avatar" class="rounded-circle mr-3 align-self-start"-->
@@ -32,7 +37,10 @@ import commentsData from '../mock/comments.json';
 import CommentsComponent from "./CommentsComponent.vue";
 import {toRaw} from "vue";
 
-const API_URL = `https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyDN6xC9p6ZCxoxE9EtACanbVb6aVGcuqzk&part=snippet, id, replies&allThreadsRelatedToChannelId=UCUpVfgd42h7pwZwCTcwjp8g`
+const CYBERKOALA_ID = `UCfEBnO2ZWyDHnN6bQSSlg1w`
+const COOLDAY_ID = `UCUpVfgd42h7pwZwCTcwjp8g`
+const API_URL = `https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyDN6xC9p6ZCxoxE9EtACanbVb6aVGcuqzk&part=snippet, id, replies&allThreadsRelatedToChannelId=`
+
 
 export default {
   name: "FetchComments",
@@ -47,7 +55,9 @@ export default {
       pageToken: String,
       firstPageUrl: String,
       pageTokens: [],
-      loading: Boolean
+      loading: Boolean,
+      selectedChannel: "coolday",
+      channelId: COOLDAY_ID
     }
   },
 
@@ -58,6 +68,7 @@ export default {
   props: {},
 
   created() {
+
     // fetch on init
     this.fetchData()
 
@@ -70,6 +81,7 @@ export default {
     // re-fetch whenever maxResults changes
     maxResults: 'fetchData',
     // pageToken: 'nextPage'
+    // selectedChannel: ''
   },
 
   computed: {
@@ -84,7 +96,7 @@ export default {
 
   methods: {
     async fetchData() {
-      const url = `${API_URL}&maxResults=${this.maxResults}`
+      const url = `${API_URL}${this.channelId}&maxResults=${this.maxResults}`
       this.firstPageUrl = url
       this.commentsThreads = await (await fetch(url).then(response => {
         while(!response.ok){
@@ -97,7 +109,7 @@ export default {
         throw new Error(response.statusText);
       }))
 
-      this.pageTokens.push(this.commentsThreads.nextPageToken);
+      // this.pageTokens.push(this.commentsThreads.nextPageToken);
       this.pageToken = this.commentsThreads.nextPageToken;
 
       // while (this.pageToken != null) {
@@ -107,18 +119,18 @@ export default {
     },
 
     async nextPage() {
-      const url = `${API_URL}&maxResults=${this.maxResults}&pageToken=${this.pageToken}`
+      const url = `${API_URL}${this.channelId}&maxResults=${this.maxResults}&pageToken=${this.pageToken}`
 
       this.commentsThreads = await (await fetch(url)).json()
       const items = toRaw(this.commentsThreads.items)
 
       this.commentItems.push(items)
-      this.pageTokens.push(this.commentsThreads.nextPageToken);
+      // this.pageTokens.push(this.commentsThreads.nextPageToken);
       this.pageToken = this.commentsThreads.nextPageToken
     },
 
     async loadPage(index) {
-      const url = `${API_URL}&maxResults=${this.maxResults}&pageToken=${this.pageTokens[index]}`
+      const url = `${API_URL}${this.channelId}&maxResults=${this.maxResults}&pageToken=${this.pageTokens[index]}`
 
       this.commentsThreads = await (await fetch(url)).json()
       // this.pageToken = this.commentsThreads.nextPageToken
@@ -129,6 +141,15 @@ export default {
       this.pageToken = this.commentsThreads.nextPageToken
     },
 
+    async onChannelChange(event) {
+      if (event.target.value === 'coolday'){
+        this.channelId = COOLDAY_ID
+      } else {
+        this.channelId = CYBERKOALA_ID
+      }
+      await this.fetchData()
+      console.log(event.target.value)
+    },
 
   },
 
