@@ -1,8 +1,13 @@
 <template>
 <!--  <h1>Последние комментарии</h1>-->
   <div class="form">
+    <div class="d-flex justify-content-center">
+      <div class="spinner-grow text-primary" role="status" v-if="loading">
+        <span class="visually-hidden"></span>
+      </div>
+    </div>
 
-    <ul class="list-unstyled">
+    <ul class="list-unstyled" v-if="!loading">
       <li v-for="{id, snippet, replies} in commentsThreads.items" v-bind:key="id" class="media">
         <!--          <img alt="Avatar" class="rounded-circle mr-3 align-self-start"-->
         <!--               v-bind:src="snippet.topLevelComment.snippet.authorProfileImageUrl">-->
@@ -41,7 +46,8 @@ export default {
       maxResults: 10,
       pageToken: String,
       firstPageUrl: String,
-      pageTokens: []
+      pageTokens: [],
+      loading: Boolean
     }
   },
 
@@ -54,19 +60,19 @@ export default {
   created() {
     // fetch on init
     this.fetchData()
+
+    // setInterval(function () {
+    //   this.fetchData();
+    // }.bind(this), 30000);
   },
 
   watch: {
     // re-fetch whenever maxResults changes
     maxResults: 'fetchData',
+    // pageToken: 'nextPage'
   },
 
   computed: {
-    orderedCommentsThreads() {
-
-      // `this` points to the component instance
-      return this.author.books.length > 0 ? 'Yes' : 'No'
-    }
   },
 
   provide() {
@@ -81,7 +87,11 @@ export default {
       const url = `${API_URL}&maxResults=${this.maxResults}`
       this.firstPageUrl = url
       this.commentsThreads = await (await fetch(url).then(response => {
+        while(!response.ok){
+          this.loading = true
+        }
         if(response.ok){
+          this.loading = false
           return response.json();
         }
         throw new Error(response.statusText);
@@ -94,15 +104,6 @@ export default {
       //   await this.nextPage();
       //   console.log(this.commentItems);
       // }
-    },
-
-    getNextPage() {
-      window.onscroll = async () => {
-        let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight;
-        if (bottomOfWindow) {
-          await this.nextPage();
-        }
-      }
     },
 
     async nextPage() {
