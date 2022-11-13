@@ -1,6 +1,6 @@
 <template>
 <!--  <h1>Последние комментарии</h1>-->
-  <div class="form">
+  <div class="container-fluid">
     <div class="d-flex justify-content-center">
       <div class="spinner-grow text-primary" role="status" v-if="loading">
         <span class="visually-hidden"></span>
@@ -68,20 +68,13 @@ export default {
   props: {},
 
   created() {
-
     // fetch on init
     this.fetchData()
-
-    // setInterval(function () {
-    //   this.fetchData();
-    // }.bind(this), 30000);
   },
 
   watch: {
     // re-fetch whenever maxResults changes
     maxResults: 'fetchData',
-    // pageToken: 'nextPage'
-    // selectedChannel: ''
   },
 
   computed: {
@@ -109,13 +102,7 @@ export default {
         throw new Error(response.statusText);
       }))
 
-      // this.pageTokens.push(this.commentsThreads.nextPageToken);
       this.pageToken = this.commentsThreads.nextPageToken;
-
-      // while (this.pageToken != null) {
-      //   await this.nextPage();
-      //   console.log(this.commentItems);
-      // }
     },
 
     async nextPage() {
@@ -125,7 +112,6 @@ export default {
       const items = toRaw(this.commentsThreads.items)
 
       this.commentItems.push(items)
-      // this.pageTokens.push(this.commentsThreads.nextPageToken);
       this.pageToken = this.commentsThreads.nextPageToken
     },
 
@@ -133,7 +119,6 @@ export default {
       const url = `${API_URL}${this.channelId}&maxResults=${this.maxResults}&pageToken=${this.pageTokens[index]}`
 
       this.commentsThreads = await (await fetch(url)).json()
-      // this.pageToken = this.commentsThreads.nextPageToken
     },
 
     async prevPage() {
@@ -152,16 +137,6 @@ export default {
     },
 
   },
-
-  // This function will be called when the component is mounted.
-  mounted() {
-  },
-
-  unmounted() {
-  },
-
-
-
 }
 </script>
 
